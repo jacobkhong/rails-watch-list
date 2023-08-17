@@ -33,3 +33,12 @@ if response.code == 200
 else
   puts "Failed to fetch movies: #{response.code} - #{response.message}"
 end
+
+
+List.create(
+  name: "Drama"
+)
+
+List.create(
+  name: "Classic"
+)

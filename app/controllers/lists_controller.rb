@@ -1,10 +1,11 @@
 class ListsController < ApplicationController
-  before_action :set_list, only: %i[show]
+  before_action :set_list, only: %i[show ]
   def index
     @lists = List.all
   end
 
   def show
+    @bookmark = Bookmark.new
   end
 
   def new
